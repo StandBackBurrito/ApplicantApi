@@ -16,11 +16,13 @@ using Microsoft.Owin.Security.OAuth;
 using ApplicantApi.Models;
 using ApplicantApi.Providers;
 using ApplicantApi.Results;
+using System.Web.Http.Description;
 
 namespace ApplicantApi.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
+    [ApiExplorerSettings(IgnoreApi = true)]
     public class AccountController : ApiController
     {
         private const string LocalLoginProvider = "Local";
