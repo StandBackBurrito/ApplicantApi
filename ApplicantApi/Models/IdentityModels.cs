@@ -29,5 +29,7 @@ namespace ApplicantApi.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ApplicantApi.Models.Applicant> Applicants { get; set; }
     }
 }
